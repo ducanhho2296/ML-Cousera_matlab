@@ -3,6 +3,13 @@
 %
 %  Instructions
 %  ------------
+%  This file contains code that helps you get started on the
+%  exercise. You will need to complete the following functions:
+%
+%     estimateGaussian.m
+%     selectThreshold.m
+%     cofiCostFunc.m
+%
 %  or any other files other than those mentioned above.
 %
 
