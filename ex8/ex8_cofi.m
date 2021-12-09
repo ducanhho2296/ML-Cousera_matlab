@@ -3,6 +3,7 @@
 %
 %  Instructions
 %  ------------
+%
 %  This file contains code that helps you get started on the
 %  exercise. You will need to complete the following functions:
 %
@@ -10,6 +11,7 @@
 %     selectThreshold.m
 %     cofiCostFunc.m
 %
+%  For this exercise, you will not need to change any code in this file,
 %  or any other files other than those mentioned above.
 %
 
@@ -35,6 +37,7 @@ fprintf('Average rating for movie 1 (Toy Story): %f / 5\n\n', ...
 %  We can "visualize" the ratings matrix by plotting it with imagesc
 imagesc(Y);
 ylabel('Movies');
+xlabel('Users');
 
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
@@ -42,6 +45,9 @@ pause;
 %% ============ Part 2: Collaborative Filtering Cost Function ===========
 %  You will now implement the cost function for collaborative filtering.
 %  To help you debug your cost function, we have included set of weights
+%  that we trained on that. Specifically, you should complete the code in 
+%  cofiCostFunc.m to return J.
+
 %  Load pre-trained weights (X, Theta, num_users, num_movies, num_features)
 load ('ex8_movieParams.mat');
 
@@ -57,6 +63,7 @@ J = cofiCostFunc([X(:) ; Theta(:)], Y, R, num_users, num_movies, ...
                num_features, 0);
            
 fprintf(['Cost at loaded parameters: %f '...
+         '\n(this value should be about 22.22)\n'], J);
 
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
