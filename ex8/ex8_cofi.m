@@ -57,6 +57,13 @@ J = cofiCostFunc([X(:) ; Theta(:)], Y, R, num_users, num_movies, ...
                num_features, 0);
            
 fprintf(['Cost at loaded parameters: %f '...
+
+fprintf('\nProgram paused. Press enter to continue.\n');
+pause;
+
+
+%% ============== Part 3: Collaborative Filtering Gradient ==============
+%  Once your cost function matches up with ours, you should now implement 
 %  the collaborative filtering gradient function. Specifically, you should 
 %  complete the code in cofiCostFunc.m to return the grad argument.
 %  
