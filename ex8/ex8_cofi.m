@@ -35,6 +35,13 @@ fprintf('Average rating for movie 1 (Toy Story): %f / 5\n\n', ...
 %  We can "visualize" the ratings matrix by plotting it with imagesc
 imagesc(Y);
 ylabel('Movies');
+
+fprintf('\nProgram paused. Press enter to continue.\n');
+pause;
+
+%% ============ Part 2: Collaborative Filtering Cost Function ===========
+%  You will now implement the cost function for collaborative filtering.
+%  To help you debug your cost function, we have included set of weights
 %  Load pre-trained weights (X, Theta, num_users, num_movies, num_features)
 load ('ex8_movieParams.mat');
 
