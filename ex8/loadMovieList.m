@@ -1,3 +1,4 @@
+function movieList = loadMovieList()
 %GETMOVIELIST reads the fixed movie list in movie.txt and returns a
 %cell array of the words
 %   movieList = GETMOVIELIST() reads the fixed movie list in movie.txt 
