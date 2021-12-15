@@ -11,3 +11,6 @@ function p = multivariateGaussian(X, mu, Sigma2)
 
 k = length(mu);
 
+if (size(Sigma2, 2) == 1) || (size(Sigma2, 1) == 1)
+
+end
