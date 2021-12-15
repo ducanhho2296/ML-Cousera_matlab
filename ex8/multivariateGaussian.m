@@ -12,5 +12,7 @@ function p = multivariateGaussian(X, mu, Sigma2)
 k = length(mu);
 
 if (size(Sigma2, 2) == 1) || (size(Sigma2, 1) == 1)
+end
+p = (2 * pi) ^ (- k / 2) * det(Sigma2) ^ (-0.5) * ...
 
 end
