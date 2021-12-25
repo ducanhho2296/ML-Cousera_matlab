@@ -224,6 +224,7 @@
 225 101 Dalmatians (1996)
 226 Die Hard 2 (1990)
 227 Star Trek VI: The Undiscovered Country (1991)
+229 Star Trek III: The Search for Spock (1984)
 232 Young Guns (1988)
 233 Under Siege (1992)
 234 Jaws (1975)
